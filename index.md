@@ -358,3 +358,28 @@ confusionMatrix(factor(pred_xgb2),factor(D_actual))
 
 
 ## References
+Australian Institute of Health and Welfare [AIHW]. (2020). Diabetes. https://www.aihw.gov.au/reports/diabetes/diabetes/contents/deaths-from-diabetes.
+
+Centre for Disease Control and Prevention in America [CDC]. (2021). National Health and Nutrition Examination Survey. http://www.cdc.gov/nhanes. 
+
+Diabetes Australia. (2020). Diabetes in Australia. https://www.diabetesaustralia.com.au/about-diabetes/diabetes-in-australia/. 
+
+Dong, Z., Wang, H., Yu, Y., Li, Y., Naidu, R., & Liu, Y. (2019). Using 2003–2014 U.S. NHANES data to determine the associations between per- and polyfluoroalkyl substances and cholesterol: Trend and implications. Ecotoxicology and Environmental Safety, 173, 461–468. https://doi.org/10.1016/j.ecoenv.2019.02.061
+
+Fan, J., Han, F., & Liu, H. (2014). Challenges of Big Data analysis. National Science Review, 1(2), 293–314. https://doi.org/10.1093/nsr/nwt032
+
+Ludwig, N., Feuerriegel, S., & Neumann, D. (2015). Putting Big Data analytics to work: Feature selection for forecasting electricity prices using the LASSO and random forests. Journal of Decision Systems, 24(1), 19–36. https://doi.org/10.1080/12460125.2015.994290
+
+McDowell, M., Dillon, C., Osterloh, J., Bolger, P., Pellizzari, E., Fernando, R., Montes de Oca, R., Schober, S., Sinks, T., Jones, R., & Mahaffey, K. (2004). Hair Mercury Levels in U.S. Children and Women of Childbearing Age: Reference Range Data from NHANES 1999-2000. Environmental Health Perspectives, 112(11), 1165–1171. https://doi.org/10.1289/ehp.7046
+
+Park, J., Lee, H., Park, J., Jung, D., & Lee, J. (2021). White Blood Cell Count as a Predictor of Incident Type 2 Diabetes Mellitus Among Non-Obese Adults: A Longitudinal 10-Year Analysis of the Korean Genome and Epidemiology Study. Journal of Inflammation Research, 14, 1235–1242. https://doi.org/10.2147/JIR.S300026
+
+Taheri, S., Asim, M., Al Malki, H., Fituri, O., Suthanthiran, M., & August, P. (2018). Intervention using vitamin D for elevated urinary albumin in type 2 diabetes mellitus (IDEAL-2 Study): study protocol for a randomised controlled trial. Trials, 19(1), 230–230. https://doi.org/10.1186/s13063-018-2616-5
+
+Willett W. C. (2002). Balancing lifestyle and genomics research for disease prevention. Science, 296(5568), 695–698. https://doi.org/10.1126/science.1071055
+
+Xue, J.-H., & Hall, P. (2015). Why Does Rebalancing Class-Unbalanced Data Improve AUC for Linear Discriminant Analysis? IEEE Transactions on Pattern Analysis and Machine Intelligence, 37(5), 1109–1112. https://doi.org/10.1109/TPAMI.2014.2359660
+
+Zhu, F., Chen, C., Zhang, Y., Chen, S., Huang, X., Li, J., Wang, Y., Liu, X., Deng, G., & Gao, J. (2020). Elevated blood mercury level has a non-linear association with infertility in U.S. women: Data from the NHANES 2013–2016. Reproductive Toxicology (Elmsford, N.Y.), 91, 53–58. https://doi.org/10.1016/j.reprotox.2019.11.005
+
+Zhuchkova, S., & Rotmistrov, A. (2021). How to choose an approach to handling missing categorical data: (un)expected findings from a simulated statistical experiment. Quality & Quantity. https://doi.org/10.1007/s11135-021-01114-w
