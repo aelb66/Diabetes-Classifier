@@ -1,4 +1,4 @@
-## Here is how I created type 2 diabetes classifiers on NHANES data using R. 
+# How I created type 2 diabetes classifiers on NHANES data using R. 
 
 ### Background on Type 2 Diabetes
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) [image source](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
