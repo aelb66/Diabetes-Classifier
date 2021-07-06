@@ -358,7 +358,7 @@ confusionMatrix(factor(pred_xgb2),factor(D_actual))
 ![image](https://user-images.githubusercontent.com/75398560/123778684-b12cab00-d914-11eb-9219-ba00bd6fbb21.png)
 
 
-_NOTE:_ I'm not perfect and neither is my code. I'm learning new/more efficient ways to code all the time, so if you find a better way of doing things then go for that! I'm just putting this code and project out there for those interested in the data science field and to show you what I love doing :)
+_**NOTE:**_ I'm not perfect and neither is my code :stuck_out_tongue_winking_eye:. I'm learning new/more efficient ways to code all the time, so if you find a better way of doing things then go for that! I'm just putting this code and project out there for those interested in the data science field and to show you what I love doing :grin:.
 
 ## References
 Australian Institute of Health and Welfare [AIHW]. (2020). Diabetes. https://www.aihw.gov.au/reports/diabetes/diabetes/contents/deaths-from-diabetes.
