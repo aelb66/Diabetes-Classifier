@@ -1,4 +1,4 @@
-# How I created type 2 diabetes classifiers on NHANES data using R. 
+# How I created type 2 diabetes classifiers on NHANES data using R 
 
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) [_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
 
@@ -7,7 +7,7 @@ Diabetes is the fastest growing chronic disease in Australia, with one individua
 
 In Australia alone, estimated costs are $14.6 billion dollars for T2D annually (Lee et al., 2012). Shockingly, in Australia for every five people who are diagnosed, _four are left undiagnosed_ (Valentine et al., 2011). Therefore, detecting and predicting disease onset in individuals is the first step to prevention and management of T2D progression. I aim to evaluate machine learning classification models of LASSO logistic regression, random forest, Naïve Bayes and XGBoost to detect and accurately classify patients with T2D. 
 
-## Data
+## Data :page_facing_up:
 The National Health and Nutrition Examination Survey [NHANES](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) is a continuous biennial survey program beginning from 1999, used to assess the mental health, physical health, and nutrition of American people (Centre for Disease Control and Prevention in America [CDC]). 
 
 On average the survey collects a nationally representative random sample of 5,000 responses per year. This novel study will utilise more than 100,000 observations between 1999-2018 and 12,300 variables. I used the first four categories of NHANES datas as similar questions were asked in the ‘Examination’ and ‘Questionnaire’ categories to the ‘Dietary’ category. 
@@ -24,7 +24,7 @@ This in combination with demographic, dietary, and health-related behavioural qu
 
 The data was retrieved from the `nhanesA` package in R and analysed in R. As the aim of the study is to create a classification model to predict T2D, participants were identified as diabetic if they answered “yes” to the question “_Have you been told by a doctor you have diabetes?_” Participants who answered “no” were identified as non-diabetic. 
 
-## 1. Libraries
+## 1. Libraries :books:
 Good coding practice is keeping all your libraries in a chunk and commenting what each library does. I used the following libraries for this project. 
 ```r
 library(nhanesA) #importing NHANES data
@@ -45,7 +45,7 @@ library(xgboost)#XGBoost
 ## 2. Pre-processing
 Researchers in the past studies chose 14 variables including demographics like age and ethnicity, as well as examination components like BMI and hypertension. I included these variables, however, also added variables relating to laboratory data as strong associations to T2D have previously been shown in literature (Akinsegun et al., 2014; Park et al., 2021; Taheri et al., 2018). This resulted in extracting **75** variables during initial feature selection.
 
-#### Extracting data
+### Extracting data
 Example shortened code for extracting relevant sub-section data for 2003-2004 Survey. This was done for each survey from 1999-2018. This took me a very long time though its always important to **know your data**.
 ```r
 ####Extracting relevant sub-section data for 2003-2004 Survey####
@@ -89,7 +89,7 @@ survey_2003_2004 <- survey_2003_2004 %>%
     )
  ```
 
-#### Merging datasets
+### Merging datasets
 Variables were coded inconsistently per survey cycle and were manually renamed. Making sure each variable was coded the same for each survey, I then merged all datasets into one calling it `combined`. Merging all survey cycles resulted in a dataset containing 101,316 observations.
 ```r
 #merging surveys together
@@ -99,7 +99,7 @@ combined <- do.call("rbind", list(survey_1999_2000,survey_2001_2002,survey_2003_
                      survey_2017_2018))
 ```
 
-#### Removing 25% missing data
+### Removing 25% missing data
 Variables with more than 25% missing were removed as anymore lead to bias in results (Zhuchkova & Rotmistrov, 2021). 
 ```r
 #showing percent of missing values in each column
@@ -113,7 +113,7 @@ combined25 %>%
   ff_glimpse()
 ```
 
-#### Data type transformations
+### Data type transformations
 25 variables remained and were transformed into numeric or categorical datatypes. Example code:
 ```r
 #converting continuous factors to numeric
@@ -136,7 +136,7 @@ is.na(combined25$Country_Birth) <- combined25$Country_Birth == "Delete"
 combined25$Country_Birth <- droplevels(combined25$Country_Birth)
 ```
 
-#### Splitting data into train and test
+### Splitting data into train and test
 I set seed and split the dataset to train (80%) and test (20%). Setting seed allows you to reproduce your reslts. Click [here](https://www.kaggle.com/obrienmitch94/importance-of-setting-seed-in-model-fitting) for information and examples about setting seed.
 ```r
 set.seed(2021) #setting seed
@@ -149,7 +149,7 @@ train_dat  <- combined25[training_sub, ]
 test_dat <- combined25[-training_sub, ]
 ```
 
-#### Single imputation
+### Single imputation
 The data was missing at random [MAR](https://www.theanalysisfactor.com/missing-data-mechanism/), so the probability of a missing observation could be explained by the observed data. I performed single imputation from the `mice` package in R was  on remaining missingness, as missing data may lead to biased outcomes if not handled accordingly (Fan et al., 2014). To prevent information leakage, I imputed test data separately, based on the same training imputation model. This imputation uses predictive mean matching for numeric variables, logit for binary variables, multinomial logit for nominal >2 levels and ordered logit for ordered var >2 levels. 
 I used 5 gibbs sampling iterations.
 ```r
@@ -162,7 +162,7 @@ imp_test <- NADIA::mice.reuse(D_imp_train, test_dat, maxit = 1,printFlag = FALSE
 imp_testC <- imp_test[[1]]
 ```
 
-#### Downsampling
+### Downsampling
 The diabetes dependent variable in the training data is imbalanced (i.e., _Diabetic_=6420: _Non-Diabetic_=74,633) and was downsampled to the minority class, recommended for large datasets and greater generalisability (Duchesney et al., 2011; Xue & Hall, 2015).
 ```r
 #original training table = >1:10 class imbalanace
@@ -172,7 +172,7 @@ downsamp_train <- downSample(x = D_imp_trainC[,-1],
                     yname="Diabetes")
 ```
 
-#### Dummy coding, normalisation and standardisation
+### Dummy coding, normalisation and standardisation
 Categorical variables in the train and test data were dummy coded and all variables were centered and scaled. To prevent information leakage, calculations from training set were used to standardise variables in the test set. This resulted in 31 variables in both sets. 
 ```r
 ###DUMMY CODING - dummy code on  train and test data separately  - prevents information leakage
