@@ -1,8 +1,8 @@
 # How I created type 2 diabetes classifiers on NHANES data using R. 
 
-### Background on Type 2 Diabetes
-![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) [image source](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
+![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) _[image source]_(https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
 
+### Background on Type 2 Diabetes
 Diabetes is the fastest growing chronic disease in Australia, with one individual developing this disease every five minutes (Diabetes Australia, 2020). Additionally, diabetes contributes to one in every ten deaths in Australia (Australian Institute of Health and Welfare [AIHW], 2020). Furthermore, more than 90% of cases with type 2 diabetes (T2D) may be _avoided_ if accompanying preventable risk factors such as unhealthy eating habits and a sedentary lifestyle are modified (Willett, 2002).
 
 In Australia alone, estimated costs are $14.6 billion dollars for T2D annually (Lee et al., 2012). Shockingly, in Australia for every five people who are diagnosed, _four are left undiagnosed_ (Valentine et al., 2011). Therefore, detecting and predicting disease onset in individuals is the first step to prevention and management of T2D progression. I aim to evaluate machine learning classification models of LASSO logistic regression, random forest, Naïve Bayes and XGBoost to detect and accurately classify patients with T2D. 
