@@ -46,7 +46,7 @@ library(xgboost)#XGBoost
 Researchers in the past studies chose 14 variables including demographics like age and ethnicity, as well as examination components like BMI and hypertension. I included these variables, however, also added variables relating to laboratory data as strong associations to T2D have previously been shown in literature (Akinsegun et al., 2014; Park et al., 2021; Taheri et al., 2018). This resulted in extracting **75** variables during initial feature selection.
 
 ### Extracting data
-Example shortened code for extracting relevant sub-section data for 2003-2004 Survey. This was done for each survey from 1999-2018. This took me a very long time though its always important to **know your data**.
+Example shortened code for extracting relevant sub-section data for 2003-2004 Survey. This was done for each survey from 1999-2018. This took me a very long time though its always important to **know your data** :eyes:.
 ```r
 ####Extracting relevant sub-section data for 2003-2004 Survey####
 
