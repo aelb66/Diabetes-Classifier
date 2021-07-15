@@ -4,7 +4,7 @@
 ##### [_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
 
 
-Check out my personal website [alolelba.com](https://www.alolelba.com/) for more projects. 
+Check out my [personal website](https://www.alolelba.com/) for more projects. 
 
 
 
