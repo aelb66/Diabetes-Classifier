@@ -55,7 +55,7 @@ Researchers in the past studies chose 14 variables including demographics like a
 
 Example shortened code for extracting relevant sub-section data for 2003-2004 Survey below. This was done for each survey from 1999-2018. This took me a very long time to choose the right variables, though it's always important to **know your data**. 
 
-You can also run feature selection on all the variables (12,300) and let the data choose (i.e., data-driven approach), I didn't forgo this method as [past researchers](https://pubmed.ncbi.nlm.nih.gov/20307319/) already did this. 
+You can also run feature selection on all the variables (12,300) and let the data choose (i.e., data-driven approach),  I was able to forgo this method as [past researchers](https://pubmed.ncbi.nlm.nih.gov/20307319/) already did this. 
 ```r
 ####Extracting relevant sub-section data for 2003-2004 Survey####
 
