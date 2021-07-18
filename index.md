@@ -1,9 +1,13 @@
 # How I created type 2 diabetes classification models using R and how you can too
+<br />
 
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) 
 
+<br />
 
 Check out my [personal website](https://www.alolelba.com/) for more projects. 
+
+<br />
 
 
 # Contents
