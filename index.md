@@ -1,7 +1,6 @@
 # How I created type 2 diabetes classification models using R and how you can too
 
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) 
-[_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
 
 
 Check out my [personal website](https://www.alolelba.com/) for more projects. 
@@ -405,3 +404,5 @@ Xue, J.-H., & Hall, P. (2015). Why Does Rebalancing Class-Unbalanced Data Improv
 Zhu, F., Chen, C., Zhang, Y., Chen, S., Huang, X., Li, J., Wang, Y., Liu, X., Deng, G., & Gao, J. (2020). Elevated blood mercury level has a non-linear association with infertility in U.S. women: Data from the NHANES 2013–2016. Reproductive Toxicology (Elmsford, N.Y.), 91, 53–58. https://doi.org/10.1016/j.reprotox.2019.11.005
 
 Zhuchkova, S., & Rotmistrov, A. (2021). How to choose an approach to handling missing categorical data: (un)expected findings from a simulated statistical experiment. Quality & Quantity. https://doi.org/10.1007/s11135-021-01114-w
+
+[_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
