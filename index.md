@@ -1,7 +1,7 @@
 # How I created type 2 diabetes classification models using R and how you can too
 
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) 
-##### [_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
+[_image source_](https://www.mz-store.com/blog/diabetes-and-physical-exercise-contraindications-a-post-training-meal-for-a-diabetics/)
 
 
 Check out my [personal website](https://www.alolelba.com/) for more projects. 
@@ -9,11 +9,7 @@ Check out my [personal website](https://www.alolelba.com/) for more projects.
 
 # Contents
 {:.no_toc}
-* Data
-* Libraries
-* Pre-processing
-  * extracting data
-  * merging datasets  
+* Data 
 {:toc}
 
 ## Background on Type 2 Diabetes
