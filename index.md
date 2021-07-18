@@ -6,7 +6,7 @@
 
 Check out my [personal website](https://www.alolelba.com/) for more projects. 
 
-
+* TOC {:toc}
 
 ## Background on Type 2 Diabetes
 Diabetes is the fastest growing chronic disease in Australia, with one individual developing this disease every five minutes (Diabetes Australia, 2020). Additionally, diabetes contributes to one in every ten deaths in Australia (Australian Institute of Health and Welfare [AIHW], 2020). Furthermore, more than 90% of cases with type 2 diabetes (T2D) may be _avoided_ if accompanying preventable risk factors such as unhealthy eating habits and a sedentary lifestyle are modified (Willett, 2002).
