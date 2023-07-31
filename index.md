@@ -1,4 +1,4 @@
-# How I created type 2 diabetes classification models using R and how you can too
+# How I created type 2 diabetes classifiers using R and how you can too
 <br />
 
 ![image](https://user-images.githubusercontent.com/75398560/123784120-74fc4900-d91a-11eb-8e86-389c47994f47.png) 
@@ -21,7 +21,7 @@ Diabetes is the fastest growing chronic disease in Australia, with one individua
 In Australia alone, estimated costs are $14.6 billion dollars for T2D annually (Lee et al., 2012). Shockingly, in Australia for every five people who are diagnosed, _four are left undiagnosed_ (Valentine et al., 2011). Therefore, detecting and predicting disease onset in individuals is the first step to prevention and management of T2D progression. I aim to evaluate machine learning classification models of LASSO logistic regression, random forest, Naïve Bayes and XGBoost to detect and accurately classify patients with T2D. 
 
 ## Data 
-The National Health and Nutrition Examination Survey [NHANES](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) is a continuous biennial survey program beginning from 1999, used to assess the mental health, physical health, and nutrition of American people (Centre for Disease Control and Prevention in America [CDC]). 
+The National Health and Nutrition Examination Survey [NHANES](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) is a continuous biennial survey program established from 1999, used to assess the mental health, physical health, and nutrition of American people (Centre for Disease Control and Prevention in America [CDC]). 
 
 On average the survey collects a nationally representative random sample of 5,000 responses per year. This novel study will utilise more than 100,000 observations between 1999-2018 and 12,300 variables. I used the first four categories of NHANES datas as similar questions were asked in the ‘Examination’ and ‘Questionnaire’ categories to the ‘Dietary’ category. 
 
